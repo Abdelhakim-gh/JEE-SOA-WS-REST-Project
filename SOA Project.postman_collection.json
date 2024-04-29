@@ -1,0 +1,794 @@
+{
+	"info": {
+		"_postman_id": "6a2cfc03-ff05-40c1-87ec-54d96f453c4d",
+		"name": "SOA Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "27163254"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/SOA_Project/Users/add?nom=John&prenom=Doe&email=john.doe@example.com&tel=123456789&password=password123&role=admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"SOA_Project",
+						"Users",
+						"add"
+					],
+					"query": [
+						{
+							"key": "nom",
+							"value": "John"
+						},
+						{
+							"key": "prenom",
+							"value": "Doe"
+						},
+						{
+							"key": "email",
+							"value": "john.doe@example.com"
+						},
+						{
+							"key": "tel",
+							"value": "123456789"
+						},
+						{
+							"key": "password",
+							"value": "password123"
+						},
+						{
+							"key": "role",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Users/add?id_user=7&nom=John&prenom=Doe&email=john.doe@example.com&tel=123456789&password=password123&role=admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Users",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id_user",
+									"value": "7"
+								},
+								{
+									"key": "nom",
+									"value": "John"
+								},
+								{
+									"key": "prenom",
+									"value": "Doe"
+								},
+								{
+									"key": "email",
+									"value": "john.doe@example.com"
+								},
+								{
+									"key": "tel",
+									"value": "123456789"
+								},
+								{
+									"key": "password",
+									"value": "password123"
+								},
+								{
+									"key": "role",
+									"value": "admin"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Etudiant",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Etudiants/add?id_user=8&nom=John&prenom=Doe&email=john.doe.etudiant@example.com&tel=123456789&password=password123&role=etudiant&id_etud=8&cne=CNE1234&section_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Etudiants",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id_user",
+									"value": "8"
+								},
+								{
+									"key": "nom",
+									"value": "John"
+								},
+								{
+									"key": "prenom",
+									"value": "Doe"
+								},
+								{
+									"key": "email",
+									"value": "john.doe.etudiant@example.com"
+								},
+								{
+									"key": "tel",
+									"value": "123456789"
+								},
+								{
+									"key": "password",
+									"value": "password123"
+								},
+								{
+									"key": "role",
+									"value": "etudiant"
+								},
+								{
+									"key": "id_etud",
+									"value": "8"
+								},
+								{
+									"key": "cne",
+									"value": "CNE1234"
+								},
+								{
+									"key": "section_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Prof",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Profs/add?nom=John&prenom=Doe&email=john.doe.prof@example.com&tel=123456789&password=password123&id_user=5&id_prof=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Profs",
+								"add"
+							],
+							"query": [
+								{
+									"key": "nom",
+									"value": "John"
+								},
+								{
+									"key": "prenom",
+									"value": "Doe"
+								},
+								{
+									"key": "email",
+									"value": "john.doe.prof@example.com"
+								},
+								{
+									"key": "tel",
+									"value": "123456789"
+								},
+								{
+									"key": "password",
+									"value": "password123"
+								},
+								{
+									"key": "id_user",
+									"value": "5"
+								},
+								{
+									"key": "id_prof",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Classe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Classes/add?id_classe=2&label=label1&section_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Classes",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id_classe",
+									"value": "2"
+								},
+								{
+									"key": "label",
+									"value": "label1"
+								},
+								{
+									"key": "section_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Matiere",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Matieres/add?id_matiere=7&label=label1&prix=0&section_id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Matieres",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id_matiere",
+									"value": "7"
+								},
+								{
+									"key": "label",
+									"value": "label1"
+								},
+								{
+									"key": "prix",
+									"value": "0"
+								},
+								{
+									"key": "section_id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Section",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Sections/add?id_section=5&niveau=n1&filiere=f1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Sections",
+								"add"
+							],
+							"query": [
+								{
+									"key": "id_section",
+									"value": "5"
+								},
+								{
+									"key": "niveau",
+									"value": "n1"
+								},
+								{
+									"key": "filiere",
+									"value": "f1"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Retrieve",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8083/SOA_Project/Users/"
+			},
+			"response": [
+				{
+					"name": "Users",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Users"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Users/7"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Etudiants",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Etudiants"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Etudiant",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Etudiants/7"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Profs",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Profs/"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Prof",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Profs/4"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Classes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Classes"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Classe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Classe/2"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Matieres",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Matieres"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Matiere",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Matieres/7"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Sections",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Sections/"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Section",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Sections/5"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": ""
+			},
+			"response": [
+				{
+					"name": "User",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Users/edit?id_user=78&email=john.doe.modify.email@example.com&nom=John&password=password123&prenom=Doe&role=admin&tel=123456789",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Users",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "id_user",
+									"value": "78"
+								},
+								{
+									"key": "email",
+									"value": "john.doe.modify.email@example.com"
+								},
+								{
+									"key": "nom",
+									"value": "John"
+								},
+								{
+									"key": "password",
+									"value": "password123"
+								},
+								{
+									"key": "prenom",
+									"value": "Doe"
+								},
+								{
+									"key": "role",
+									"value": "admin"
+								},
+								{
+									"key": "tel",
+									"value": "123456789"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Etudiant",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Etudiants/edit"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Prof",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Profs/edit"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Classe",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Classes/edit?id_classe=2&label=lable2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Classes",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "id_classe",
+									"value": "2"
+								},
+								{
+									"key": "label",
+									"value": "lable2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Matiere",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Matieres/edit?id_matiere=7&label=lable2&prix=100",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Matieres",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "id_matiere",
+									"value": "7"
+								},
+								{
+									"key": "label",
+									"value": "lable2"
+								},
+								{
+									"key": "prix",
+									"value": "100"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Section",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Sections/edit?id_section=5&niveau=n2&filiere=f2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Sections",
+								"edit"
+							],
+							"query": [
+								{
+									"key": "id_section",
+									"value": "5"
+								},
+								{
+									"key": "niveau",
+									"value": "n2"
+								},
+								{
+									"key": "filiere",
+									"value": "f2"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": ""
+			},
+			"response": [
+				{
+					"name": "User",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Users/remove/7"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Etudiant",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Etudiants/remove/8"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Prof",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Profs/remove/5"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Classe",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Classes/remove/2"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Matiere",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Matieres/remove/7"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Section",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:8083/SOA_Project/Sections/remove/5"
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

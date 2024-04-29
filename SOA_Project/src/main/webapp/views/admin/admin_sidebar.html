@@ -1,0 +1,58 @@
+<nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0">
+	<div class="container-fluid d-flex flex-column p-0">
+		<a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+			<div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-align-left"
+					style="transform: rotate(15deg);"></i></div>
+			<div class="sidebar-brand-text mx-3"><span>Admin</span></div>
+		</a>
+		<ul class="navbar-nav text-light" id="accordionSidebar-1">
+			<li class="nav-item"><a class="nav-link active" href="admin_espace.jsp"><i
+						class="fas fa-tachometer-alt"></i><span>Tableau de bord</span></a></li>
+			<li class="nav-item"><a class="nav-link" href="admin_profile.jsp"><i
+						class="fas fa-user-circle"></i><span>Profil</span></a></li>
+			<li class="nav-item"><a class="nav-link collapsed" href="#collapseItem1" aria-controls="collapseItem1"
+					aria-expanded="false" role="button" data-bs-toggle="collapse">
+					<i class="fas fa-cog"></i><span>Gestion</span></a>
+				<div class="shadow collapse" id="collapseItem1" data-parent="accordionSidebar"
+					aria-labelledby="headingPages">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<a class="collapse-item" href="admin_etudiants.jsp"><i class="fas fa-user-graduate"></i><span
+								class="ms-2">Etudiants</span></a>
+						<a class="collapse-item" href="admin_profs.jsp"><i class="fas fa-user-tie"></i><span
+								class="ms-2">Profs</span></a>
+						<a class="collapse-item" href="admin_classes.jsp"><i class="fas fa-users"></i><span
+								class="ms-2">Classes</span></a>
+						<a class="collapse-item" href="admin_matieres.jsp"><i class="fas fa-book"></i><span
+								class="ms-2">Matières</span></a>
+						<a class="collapse-item" href="admin_sections.jsp"><i class="fas fa-university"></i><span
+								class="ms-2">Sections</span></a>
+					</div>
+				</div>
+			</li>
+			<li class="nav-item"><a class="nav-link collapsed" href="#collapseItem2" aria-controls="collapseItem1"
+					aria-expanded="false" role="button" data-bs-toggle="collapse"><i class="fas fa-plus-circle"
+						style="margin-right: 4px;"></i><span>Ajouter</span></a>
+				<div class="shadow collapse" id="collapseItem2" data-parent="accordionSidebar"
+					aria-labelledby="headingPages">
+					<div class="bg-white py-2 collapse-inner rounded">
+						<a class="collapse-item" href="admin_etudiant_add.jsp"><i class="fas fa-user-graduate"></i><span
+								class="ms-2">Etudiant</span></a>
+						<a class="collapse-item" href="admin_prof_add.jsp"><i class="fas fa-user-tie"></i><span
+								class="ms-2">Prof</span></a>
+						<a class="collapse-item" href="admin_classe_add.jsp"><i class="fas fa-users"></i><span
+								class="ms-2">Classe</span></a>
+						<a class="collapse-item" href="admin_matiere_add.jsp"><i class="fas fa-book"></i><span
+								class="ms-2">Matière</span></a>
+						<a class="collapse-item" href="admin_section_add.jsp"><i class="fas fa-university"></i><span
+								class="ms-2">Section</span></a>
+					</div>
+				</div>
+			</li>
+
+
+		</ul>
+		<hr class="sidebar-divider my-0">
+		<div class="text-center d-none d-md-inline mt-3"><button class="btn rounded-circle border-0" id="sidebarToggle"
+				type="button"></button></div>
+	</div>
+</nav>

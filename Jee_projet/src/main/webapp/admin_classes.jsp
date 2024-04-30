@@ -147,8 +147,14 @@ if (session.getAttribute("user") == null) {
 										</div>
 									</div>
 									<%
+									/* old logic */
 									ClasseDAO classeDAO = new ClasseDAO();
 									ArrayList<Classe> classes = classeDAO.readClasses();
+									
+									/* web service object , we need to config path in buttons & servlet pointing on this servlet */
+									/* Object classesobj = request.getAttribute("classes");
+									ArrayList<Classe> classes = (ArrayList<Classe>) classesobj; */
+									
 									EtudiantDAO etudiantDAO = new EtudiantDAO();
 									%>
 									<div class="table-responsive table mt-2" id="dataTable-1"
@@ -165,7 +171,7 @@ if (session.getAttribute("user") == null) {
 											<tbody>
 												<%
 												for (Classe item : classes) {
-													if (item.getId_classe() != 18) {
+													if (item.getId_classe() != 1) {
 														int nb_etud = etudiantDAO.nombreEtudiantsClasse(item.getId_classe());
 														
 												%>

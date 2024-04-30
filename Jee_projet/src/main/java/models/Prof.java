@@ -52,6 +52,10 @@ public class Prof {
 		this.matieres = matieres;
 	}
 	
+	public Prof() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public User getUser() {
 		return user;
 	}

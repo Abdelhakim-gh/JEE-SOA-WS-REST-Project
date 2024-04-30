@@ -21,6 +21,10 @@ public class Matiere {
 		this.prix = prix;
 	}
 
+	public Matiere() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId_matiere() {
 		return id_matiere;
 	}

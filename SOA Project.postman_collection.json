@@ -2,7 +2,7 @@
 	"info": {
 		"_postman_id": "6a2cfc03-ff05-40c1-87ec-54d96f453c4d",
 		"name": "SOA Project",
-		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27163254"
 	},
 	"item": [
@@ -354,7 +354,19 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": "http://localhost:8083/SOA_Project/Users/"
+				"url": {
+					"raw": "http://localhost:8083/SOA_Project/Users/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"SOA_Project",
+						"Users",
+						""
+					]
+				}
 			},
 			"response": [
 				{
@@ -362,7 +374,18 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Users"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Users"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -374,7 +397,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Users/7"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Users/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Users",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -386,7 +421,18 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Etudiants"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Etudiants",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Etudiants"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -398,7 +444,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Etudiants/7"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Etudiants/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Etudiants",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -410,7 +468,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Profs/"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Profs/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Profs",
+								""
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -422,7 +492,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Profs/4"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Profs/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Profs",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -434,7 +516,18 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Classes"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Classes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Classes"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -446,7 +539,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Classe/2"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Classe/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Classe",
+								"2"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -458,7 +563,18 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Matieres"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Matieres",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Matieres"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -470,7 +586,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Matieres/7"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Matieres/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Matieres",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -482,7 +610,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Sections/"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Sections/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Sections",
+								""
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -494,7 +634,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Sections/5"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Sections/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Sections",
+								"5"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -508,7 +660,9 @@
 			"request": {
 				"method": "GET",
 				"header": [],
-				"url": ""
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": [
 				{
@@ -577,7 +731,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Etudiants/edit"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Etudiants/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Etudiants",
+								"edit"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -589,7 +755,19 @@
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Profs/edit"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Profs/edit",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Profs",
+								"edit"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -713,7 +891,9 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"url": ""
+				"url": {
+					"raw": ""
+				}
 			},
 			"response": [
 				{
@@ -721,7 +901,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Users/remove/7"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Users/remove/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Users",
+								"remove",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -733,7 +926,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Etudiants/remove/8"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Etudiants/remove/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Etudiants",
+								"remove",
+								"8"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -745,7 +951,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Profs/remove/5"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Profs/remove/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Profs",
+								"remove",
+								"5"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -757,7 +976,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Classes/remove/2"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Classes/remove/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Classes",
+								"remove",
+								"2"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -769,7 +1001,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Matieres/remove/7"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Matieres/remove/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Matieres",
+								"remove",
+								"7"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,
@@ -781,7 +1026,20 @@
 					"originalRequest": {
 						"method": "DELETE",
 						"header": [],
-						"url": "http://localhost:8083/SOA_Project/Sections/remove/5"
+						"url": {
+							"raw": "http://localhost:8083/SOA_Project/Sections/remove/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"SOA_Project",
+								"Sections",
+								"remove",
+								"5"
+							]
+						}
 					},
 					"_postman_previewlanguage": null,
 					"header": null,

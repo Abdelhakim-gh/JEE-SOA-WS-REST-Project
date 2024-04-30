@@ -24,6 +24,10 @@ public class Classe {
 		this.section = section;
 	}
 
+	public Classe() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public int getId_classe() {
 		return id_classe;
 	}
@@ -47,7 +51,10 @@ public class Classe {
 	public void setSection(Section section) {
 		this.section = section;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Classe [id_classe=" + id_classe + ", lable=" + lable + ", section=" + section + "]";
+	}
 	
 }

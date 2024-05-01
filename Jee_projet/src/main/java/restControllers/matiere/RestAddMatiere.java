@@ -32,7 +32,7 @@ public class RestAddMatiere extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         
-        // to execute RestAddMatiere?id_matiere=7&label=label1&prix=0&section_id=1
+        // to execute: RestAddMatiere?id_matiere=7&label=label1&prix=0&section_id=1
         
         // Retrieve parameters from the request
         int idMatiere = Integer.parseInt(request.getParameter("id_matiere"));

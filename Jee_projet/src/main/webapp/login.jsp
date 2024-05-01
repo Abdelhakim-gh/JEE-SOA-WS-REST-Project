@@ -33,7 +33,10 @@
 			<div class="card-header text-center">
 				<h4 class="text-center text-primary m-0 fw-bold ">Se Connecte</h4>
 			</div>
-			<form action="Login" method="post">
+			
+			<!-- ----------------- RestLogin login using rest api service ----------------- -->
+			
+			<form action="RestLogin" method="post">
 				<div class="card-body ">
 
 					<div class="row ">

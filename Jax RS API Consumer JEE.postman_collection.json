@@ -1,108 +1,49 @@
 {
 	"info": {
-		"_postman_id": "6a2cfc03-ff05-40c1-87ec-54d96f453c4d",
-		"name": "SOA Project",
+		"_postman_id": "1e76616c-0e05-42c3-80f7-1d0fa99fccdf",
+		"name": "Jax RS API Consumer JEE",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "27163254"
 	},
 	"item": [
 		{
-			"name": "Create Resource",
+			"name": "Create Resources",
 			"item": [
 				{
 					"name": "Create",
-					"protocolProfileBehavior": {
-						"disabledSystemHeaders": {}
-					},
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/SOA_Project/Users/add?nom=John&prenom=Doe&email=john.doe@example.com&tel=123456789&password=password123&role=admin",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"SOA_Project",
-								"Users",
-								"add"
-							],
-							"query": [
-								{
-									"key": "nom",
-									"value": "John"
-								},
-								{
-									"key": "prenom",
-									"value": "Doe"
-								},
-								{
-									"key": "email",
-									"value": "john.doe@example.com"
-								},
-								{
-									"key": "tel",
-									"value": "123456789"
-								},
-								{
-									"key": "password",
-									"value": "password123"
-								},
-								{
-									"key": "role",
-									"value": "admin"
-								}
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
-							"name": "User",
+							"name": "Classe",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Users/add?id_user=7&nom=John&prenom=Doe&email=john.doe@example.com&tel=123456789&password=password123&role=admin",
+									"raw": "http://localhost:8083/Jee_projet/RestAddClasse?id_classe=2&label=label1&section_id=1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Users",
-										"add"
+										"Jee_projet",
+										"RestAddClasse"
 									],
 									"query": [
 										{
-											"key": "id_user",
-											"value": "7"
+											"key": "id_classe",
+											"value": "2"
 										},
 										{
-											"key": "nom",
-											"value": "John"
+											"key": "label",
+											"value": "label1"
 										},
 										{
-											"key": "prenom",
-											"value": "Doe"
-										},
-										{
-											"key": "email",
-											"value": "john.doe@example.com"
-										},
-										{
-											"key": "tel",
-											"value": "123456789"
-										},
-										{
-											"key": "password",
-											"value": "password123"
-										},
-										{
-											"key": "role",
-											"value": "admin"
+											"key": "section_id",
+											"value": "1"
 										}
 									]
 								}
@@ -118,16 +59,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Etudiants/add?id_user=8&nom=John&prenom=Doe&email=john.doe.etudiant@example.com&tel=123456789&password=password123&role=etudiant&id_etud=8&cne=CNE1234&section_id=1",
+									"raw": "http://localhost:8083/Jee_projet/RestAddEtudiant?id_user=8&nom=John&prenom=Doe&email=john.doe.etudiant@example.com&tel=123456789&password=password123&role=etudiant&id_etud=8&cne=CNE1234&section_id=1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Etudiants",
-										"add"
+										"Jee_projet",
+										"RestAddEtudiant"
 									],
 									"query": [
 										{
@@ -179,113 +119,20 @@
 							"body": null
 						},
 						{
-							"name": "Prof",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Profs/add?nom=John&prenom=Doe&email=john.doe.prof@example.com&tel=123456789&password=password123&id_user=5&id_prof=5",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Profs",
-										"add"
-									],
-									"query": [
-										{
-											"key": "nom",
-											"value": "John"
-										},
-										{
-											"key": "prenom",
-											"value": "Doe"
-										},
-										{
-											"key": "email",
-											"value": "john.doe.prof@example.com"
-										},
-										{
-											"key": "tel",
-											"value": "123456789"
-										},
-										{
-											"key": "password",
-											"value": "password123"
-										},
-										{
-											"key": "id_user",
-											"value": "5"
-										},
-										{
-											"key": "id_prof",
-											"value": "5"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Classe",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Classes/add?id_classe=2&label=label1&section_id=1",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Classes",
-										"add"
-									],
-									"query": [
-										{
-											"key": "id_classe",
-											"value": "2"
-										},
-										{
-											"key": "label",
-											"value": "label1"
-										},
-										{
-											"key": "section_id",
-											"value": "1"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
 							"name": "Matiere",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Matieres/add?id_matiere=7&label=label1&prix=0&section_id=1",
+									"raw": "http://localhost:8083/Jee_projet/RestAddMatiere?id_matiere=7&label=label1&prix=0&section_id=1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Matieres",
-										"add"
+										"Jee_projet",
+										"RestAddMatiere"
 									],
 									"query": [
 										{
@@ -313,21 +160,73 @@
 							"body": null
 						},
 						{
-							"name": "Section",
+							"name": "Prof",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Sections/add?id_section=5&niveau=n1&filiere=f1",
+									"raw": "http://localhost:8083/Jee_projet/RestAddProf?id_user=5&id_prof=5&nom=John&prenom=Doe&email=john.doe.prof@example.com&tel=123456789&password=password123",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Sections",
-										"add"
+										"Jee_projet",
+										"RestAddProf"
+									],
+									"query": [
+										{
+											"key": "id_user",
+											"value": "5"
+										},
+										{
+											"key": "id_prof",
+											"value": "5"
+										},
+										{
+											"key": "nom",
+											"value": "John"
+										},
+										{
+											"key": "prenom",
+											"value": "Doe"
+										},
+										{
+											"key": "email",
+											"value": "john.doe.prof@example.com"
+										},
+										{
+											"key": "tel",
+											"value": "123456789"
+										},
+										{
+											"key": "password",
+											"value": "password123"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Section",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/Jee_projet/RestAddSection?id_section=5&niveau=n1&filiere=f1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"Jee_projet",
+										"RestAddSection"
 									],
 									"query": [
 										{
@@ -355,43 +254,30 @@
 			]
 		},
 		{
-			"name": "Retrieve Resource",
+			"name": "Retrieve Resources",
 			"item": [
 				{
 					"name": "Retrieve",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/SOA_Project/Users/",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"SOA_Project",
-								"Users",
-								""
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
-							"name": "Users",
+							"name": "Classes",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Users",
+									"raw": "http://localhost:8083/Jee_projet/RestReadClasse",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Users"
+										"Jee_projet",
+										"RestReadClasse"
 									]
 								}
 							},
@@ -401,21 +287,26 @@
 							"body": null
 						},
 						{
-							"name": "User",
+							"name": "Classe",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Users/7",
+									"raw": "http://localhost:8083/Jee_projet/RestReadClasse?id_classe=2",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Users",
-										"7"
+										"Jee_projet",
+										"RestReadClasse"
+									],
+									"query": [
+										{
+											"key": "id_classe",
+											"value": "2"
+										}
 									]
 								}
 							},
@@ -430,15 +321,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Etudiants",
+									"raw": "http://localhost:8083/Jee_projet/RestReadEtudiant",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Etudiants"
+										"Jee_projet",
+										"RestReadEtudiant"
 									]
 								}
 							},
@@ -453,111 +344,21 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Etudiants/7",
+									"raw": "http://localhost:8083/Jee_projet/RestReadEtudiant?id_etud=8",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Etudiants",
-										"7"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Profs",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Profs/",
-									"protocol": "http",
-									"host": [
-										"localhost"
+										"Jee_projet",
+										"RestReadEtudiant"
 									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Profs",
-										""
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Prof",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Profs/7",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Profs",
-										"7"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Classes",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Classes",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Classes"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Classe",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Classe/2",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Classe",
-										"2"
+									"query": [
+										{
+											"key": "id_etud",
+											"value": "8"
+										}
 									]
 								}
 							},
@@ -572,15 +373,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Matieres",
+									"raw": "http://localhost:8083/Jee_projet/RestReadMatiere",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Matieres"
+										"Jee_projet",
+										"RestReadMatiere"
 									]
 								}
 							},
@@ -590,171 +391,20 @@
 							"body": null
 						},
 						{
-							"name": "Matiere",
+							"name": "Profs",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Matieres/7",
+									"raw": "http://localhost:8083/Jee_projet/RestReadProf",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Matieres",
-										"7"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Sections",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Sections/",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Sections",
-										""
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Section",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Sections/5",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Sections",
-										"5"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						}
-					]
-				}
-			]
-		},
-		{
-			"name": "Update Resource",
-			"item": [
-				{
-					"name": "Update",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
-					},
-					"response": [
-						{
-							"name": "User",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Content-Type",
-										"name": "Content-Type",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Users/edit?id_user=78&email=john.doe.modify.email@example.com&nom=John&password=password123&prenom=Doe&role=admin&tel=123456789",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Users",
-										"edit"
-									],
-									"query": [
-										{
-											"key": "id_user",
-											"value": "78"
-										},
-										{
-											"key": "email",
-											"value": "john.doe.modify.email@example.com"
-										},
-										{
-											"key": "nom",
-											"value": "John"
-										},
-										{
-											"key": "password",
-											"value": "password123"
-										},
-										{
-											"key": "prenom",
-											"value": "Doe"
-										},
-										{
-											"key": "role",
-											"value": "admin"
-										},
-										{
-											"key": "tel",
-											"value": "123456789"
-										}
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Etudiant",
-							"originalRequest": {
-								"method": "GET",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Etudiants/edit",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Etudiants",
-										"edit"
+										"Jee_projet",
+										"RestReadProf"
 									]
 								}
 							},
@@ -769,16 +419,21 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Profs/edit",
+									"raw": "http://localhost:8083/Jee_projet/RestReadProf?id_prof=5",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Profs",
-										"edit"
+										"Jee_projet",
+										"RestReadProf"
+									],
+									"query": [
+										{
+											"key": "id_prof",
+											"value": "5"
+										}
 									]
 								}
 							},
@@ -788,21 +443,57 @@
 							"body": null
 						},
 						{
-							"name": "Classe",
+							"name": "Sections",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Classes/edit?id_classe=2&label=lable2",
+									"raw": "http://localhost:8083/Jee_projet/RestReadSection",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Classes",
-										"edit"
+										"Jee_projet",
+										"RestReadSection"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Update Resources",
+			"item": [
+				{
+					"name": "Update",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "Classe",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/Jee_projet/RestUpdateClasse?id_classe=2&label=lable2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"Jee_projet",
+										"RestUpdateClasse"
 									],
 									"query": [
 										{
@@ -822,21 +513,61 @@
 							"body": null
 						},
 						{
-							"name": "Matiere",
+							"name": "Etudiant",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Matieres/edit?id_matiere=7&label=lable2&prix=100",
+									"raw": "http://localhost:8083/Jee_projet/UpdateEtudiant?id_etud=8&classe_id=1&payement=1&matieres=1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Matieres",
-										"edit"
+										"Jee_projet",
+										"UpdateEtudiant"
+									],
+									"query": [
+										{
+											"key": "id_etud",
+											"value": "8"
+										},
+										{
+											"key": "classe_id",
+											"value": "1"
+										},
+										{
+											"key": "payement",
+											"value": "1"
+										},
+										{
+											"key": "matieres",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Matiere",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/Jee_projet/RestUpdateMatiere?id_matiere=7&label=lable2&prix=100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"Jee_projet",
+										"RestUpdateMatiere"
 									],
 									"query": [
 										{
@@ -860,21 +591,61 @@
 							"body": null
 						},
 						{
-							"name": "Section",
+							"name": "Prof",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Sections/edit?id_section=5&niveau=n2&filiere=f2",
+									"raw": "http://localhost:8083/Jee_projet/UpdateProf?id_prof=5&salaire=1000&payement=1&matieres=1",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Sections",
-										"edit"
+										"Jee_projet",
+										"UpdateProf"
+									],
+									"query": [
+										{
+											"key": "id_prof",
+											"value": "5"
+										},
+										{
+											"key": "salaire",
+											"value": "1000"
+										},
+										{
+											"key": "payement",
+											"value": "1"
+										},
+										{
+											"key": "matieres",
+											"value": "1"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Section",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/Jee_projet/RestUpdateSection?id_section=5&niveau=n2&filiere=f2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"Jee_projet",
+										"RestUpdateSection"
 									],
 									"query": [
 										{
@@ -902,35 +673,36 @@
 			]
 		},
 		{
-			"name": "Delete Resource",
+			"name": "Delete Resources",
 			"item": [
 				{
 					"name": "Delete",
 					"request": {
-						"method": "DELETE",
-						"header": [],
-						"url": {
-							"raw": ""
-						}
+						"method": "GET",
+						"header": []
 					},
 					"response": [
 						{
-							"name": "User",
+							"name": "Classe",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Users/remove/7",
+									"raw": "http://localhost:8083/Jee_projet/RestDeleteClasse?id_classe=2",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Users",
-										"remove",
-										"7"
+										"Jee_projet",
+										"RestDeleteClasse"
+									],
+									"query": [
+										{
+											"key": "id_classe",
+											"value": "2"
+										}
 									]
 								}
 							},
@@ -942,70 +714,24 @@
 						{
 							"name": "Etudiant",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Etudiants/remove/8",
+									"raw": "http://localhost:8083/Jee_projet/RestDeleteEtudiant?id_etud=8",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Etudiants",
-										"remove",
-										"8"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Prof",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Profs/remove/5",
-									"protocol": "http",
-									"host": [
-										"localhost"
+										"Jee_projet",
+										"RestDeleteEtudiant"
 									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Profs",
-										"remove",
-										"5"
-									]
-								}
-							},
-							"_postman_previewlanguage": null,
-							"header": null,
-							"cookie": [],
-							"body": null
-						},
-						{
-							"name": "Classe",
-							"originalRequest": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Classes/remove/2",
-									"protocol": "http",
-									"host": [
-										"localhost"
-									],
-									"port": "8083",
-									"path": [
-										"SOA_Project",
-										"Classes",
-										"remove",
-										"2"
+									"query": [
+										{
+											"key": "id_etud",
+											"value": "8"
+										}
 									]
 								}
 							},
@@ -1017,20 +743,53 @@
 						{
 							"name": "Matiere",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Matieres/remove/7",
+									"raw": "http://localhost:8083/Jee_projet/RestDeleteMatiere?id_matiere=7",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Matieres",
-										"remove",
-										"7"
+										"Jee_projet",
+										"RestDeleteMatiere"
+									],
+									"query": [
+										{
+											"key": "id_matiere",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": null
+						},
+						{
+							"name": "Prof",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8083/Jee_projet/RestDeleteProf?id_prof=5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8083",
+									"path": [
+										"Jee_projet",
+										"RestDeleteProf"
+									],
+									"query": [
+										{
+											"key": "id_prof",
+											"value": "5"
+										}
 									]
 								}
 							},
@@ -1042,20 +801,24 @@
 						{
 							"name": "Section",
 							"originalRequest": {
-								"method": "DELETE",
+								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Sections/remove/5",
+									"raw": "http://localhost:8083/Jee_projet/RestDeleteSection?id_section=5",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Sections",
-										"remove",
-										"5"
+										"Jee_projet",
+										"RestDeleteSection"
+									],
+									"query": [
+										{
+											"key": "id_section",
+											"value": "5"
+										}
 									]
 								}
 							},
@@ -1072,33 +835,10 @@
 			"name": "Authenticate",
 			"item": [
 				{
-					"name": "Login",
+					"name": "Authenticate",
 					"request": {
 						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:8083/SOA_Project/Auth/Login?email=pariwo@mailinator.com&password=Pa$$w0rd!",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "8083",
-							"path": [
-								"SOA_Project",
-								"Auth",
-								"Login"
-							],
-							"query": [
-								{
-									"key": "email",
-									"value": "pariwo@mailinator.com"
-								},
-								{
-									"key": "password",
-									"value": "Pa$$w0rd!"
-								}
-							]
-						}
+						"header": []
 					},
 					"response": [
 						{
@@ -1107,16 +847,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Auth/Login?email=pariwo@mailinator.com&password=Pa$$w0rd!",
+									"raw": "http://localhost:8083/Jee_projet/RestLogin?email=pariwo@mailinator.com&password=Pa$$w0rd!",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Auth",
-										"Login"
+										"Jee_projet",
+										"RestLogin"
 									],
 									"query": [
 										{
@@ -1141,16 +880,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Auth/Login?email=abdo@gmail.com&password=abdo",
+									"raw": "http://localhost:8083/Jee_projet/RestLogin?email=abdo@gmail.com&password=abdo",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Auth",
-										"Login"
+										"Jee_projet",
+										"RestLogin"
 									],
 									"query": [
 										{
@@ -1175,16 +913,15 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:8083/SOA_Project/Auth/Login?email=tiriximi@mailinator.com&password=Pa$$w0rd!",
+									"raw": "http://localhost:8083/Jee_projet/RestLogin?email=tiriximi@mailinator.com&password=Pa$$w0rd!",
 									"protocol": "http",
 									"host": [
 										"localhost"
 									],
 									"port": "8083",
 									"path": [
-										"SOA_Project",
-										"Auth",
-										"Login"
+										"Jee_projet",
+										"RestLogin"
 									],
 									"query": [
 										{

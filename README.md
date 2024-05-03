@@ -2,6 +2,8 @@
 
 > *Practice Project implementing REST api in Server Side Project &amp; Consume it with Client side Project*
 
+> *Older version of project : https://github.com/Abdelhakim-gh/JakartaEE-Project*
+
 ## API Docs
 
 ### Structure

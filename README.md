@@ -36,7 +36,7 @@ Firstly, I have to inform you that I'm not using POST and PUT requests in my API
 
 <br>
 
-![alt text](image.png)
+![error](imgs/error.png)
 
 - I’ve tried changing the libs version.
 - Activating **content-type** & **accept** with `Json`, `xml` support & it didn't work.

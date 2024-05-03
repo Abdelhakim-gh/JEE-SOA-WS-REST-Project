@@ -112,3 +112,14 @@ Pa$$w0rd!
 ### Models
 
 ### Views
+
+## Examples
+
+### Create
+![create](imgs/create.png)
+### Read
+![readUsers](imgs/ReadUsers.png)
+### Update
+![update](imgs/update.png)
+### Delete
+![delete](imgs/remove.png)
